@@ -1,0 +1,39 @@
+.layout-container {
+    background-color: #ebebeb;
+    max-width: 420px;
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
+    overflowY: auto;
+    background-color: red;
+    height: 100vh;
+    height: 100vh !important;
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 1px !important;
+        background-color: none;
+
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #fbb02f51;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: none;
+    } 
+    @media only screen and (min-device-width: 720px) and (min-device-height: 720px) {
+          height: 720px !important;
+          margin-top: calc((100vh - 720px) / 2) !important;
+          position: relative;
+    }
+}
+
+@media only screen and (min-device-width: 720px) and (min-device-height: 720px) {
+    .layout-container {
+        height: 720px !important;
+        margin-top: calc((100vh - 720px) / 2) !important;
+        position: relative;
+    }
+}

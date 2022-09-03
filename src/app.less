@@ -1,0 +1,48 @@
+@colorDefault: #FFBA33;
+@secondColor:  #6A4029;
+
+body{
+    font-family: 'Rubik';
+    font-style: normal;
+    background-color: #F8F8F8;
+    // overflow: hidden;   
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 1px !important;
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: @colorDefault;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}  
+.content{
+    overflow: scroll;
+}
+
+a {
+    text-decoration: 'none';
+}
+
+
+@media only screen and (min-width: 1422px) {
+ body{
+    display: flex;
+    justify-content: center;
+ }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .cardInfo{
+        display: none !important;
+      background-color: #6A4029;
+    }
+}
+   
+

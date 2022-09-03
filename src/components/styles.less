@@ -1,0 +1,155 @@
+
+@colorDefault: #FFBA33;
+@secondColor:  #6A4029;
+
+.test{
+    width: 300px;
+}
+
+.seePromo{
+    width: 250px;
+    cursor: pointer;
+    background: @colorDefault;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: @secondColor;
+    &:hover{
+        background-color: @secondColor;
+        color: white;
+        box-shadow: #4F5665;
+    }
+}
+
+.row-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .card-footer{
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-bottom: -70px;
+        z-index: 2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    b {
+        color: #0B132A;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+
+.active{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+    background-color: #FFFFFF;
+}
+.hidden{
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: -80px;
+    transition: 0.3s linear;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    z-index: 5;
+    width: 100%;
+    max-width: 1548px;
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        b {
+            color: #0B132A;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    }
+
+    .header-content{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        .list{
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .listMenu{
+                font-style: normal;
+                font-size: 1rem;
+                color: #4F5665;
+                width: auto;
+                width: 120px;
+                cursor: pointer;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                &:hover{
+                    color: @secondColor;
+                    font-weight:bolder;
+                }
+            }
+        }
+        .auth-header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            .login{
+                font-style: normal;
+                font-size: 1rem;
+                color: #4F5665;
+                margin: 20px;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    color: @secondColor;
+                    font-weight:bolder;
+                }
+            }    
+            .regis{
+                background-color: @colorDefault;
+                border-radius: 40px;
+                width: 100px;
+                font-size: 1rem;
+                padding: 10px;
+                text-align: center;
+                cursor: pointer;
+                color:@secondColor;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                    background-color: @secondColor;
+                }
+            }
+        }
+
+    }
+}
+
+.h-menu{
+    display: none !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .header-content{
+        display: none !important;
+    }
+    .h-menu{
+        display: flex !important;
+    }
+}

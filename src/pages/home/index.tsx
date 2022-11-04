@@ -9,6 +9,7 @@ import ceklis from 'assets/ceklis.svg'
 import ceklis2 from 'assets/ceklis2.svg'
 import map from 'assets/map.svg'
 import partner from 'assets/partner.svg'
+
 import { favoriteList } from './list'
 
 const listP = (ket: string) => {
@@ -25,7 +26,7 @@ const Home = () => {
   return (
     <>
       <Default>
-        <div className="jumbo  w-100">
+        <div className="jumbo w-100">
           <div className="d-flex w-75  justify-content-start flex-column p-3">
             <b className="pt-5 mt-5">
               Start Your Day with Coffee and Good Meals

@@ -11,7 +11,7 @@ const Auth: React.FC<defaultProps> = ({ children }) => {
   return (
     <div className="d-flex" style={{ height: '100vh' }}>
       <div className="bg-auth" />
-      <div className="p-5 w-75 d-flex flex-column align-items-center">
+      <div className="p-5 w-50 d-flex flex-column align-items-center">
         <div className="d-flex w-75 justify-content-between align-items-center">
           <Link
             to="/Home"
@@ -43,7 +43,7 @@ const Auth: React.FC<defaultProps> = ({ children }) => {
             Sign Up
           </Link>
         </div>
-        <div className="contentAuth w-75">{children}</div>
+        <div className="contentAuth">{children}</div>
       </div>
     </div>
   )

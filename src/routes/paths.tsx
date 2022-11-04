@@ -19,7 +19,6 @@ export const Cart = lazy(() => import('src/pages/cart/index'))
 export const History = lazy(() => import('src/pages/history/index'))
 export const Profile = lazy(() => import('src/pages/profile/index'))
 export const Product = lazy(() => import('src/pages/product/index'))
-export const HomeMobile = lazy(() => import('src/mobile/home/index'))
 
 export const pageRouters = [
   {

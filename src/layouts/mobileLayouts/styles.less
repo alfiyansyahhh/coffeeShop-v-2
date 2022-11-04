@@ -1,12 +1,13 @@
+@colorDefault: #FFBA33;
+@secondColor:  #6A4029;
+
 .layout-container {
     background-color: #ebebeb;
-    max-width: 420px;
+    // max-width: 420px;
     left: calc(-50vw + 50%);
     right: calc(-50vw + 50%);
     margin-left: auto;
     margin-right: auto;
-    overflowY: auto;
-    background-color: red;
     height: 100vh;
     height: 100vh !important;
     ::-webkit-scrollbar {
@@ -24,11 +25,43 @@
         background: none;
     } 
     @media only screen and (min-device-width: 720px) and (min-device-height: 720px) {
-          height: 720px !important;
-          margin-top: calc((100vh - 720px) / 2) !important;
-          position: relative;
+        height: 720px !important;
+        margin-top: calc((100vh - 720px) / 2) !important;
+        position: relative;
     }
 }
+
+.btn{
+    width: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+
+    &.btn-yellow {
+        background: @colorDefault;
+        color: @secondColor;
+        &:hover{
+            background-color: @secondColor;
+            color: white;
+            box-shadow: #4F5665;
+        }
+    }
+    
+    &.btn-brown {
+        background: @secondColor;
+        color: white;
+        &:hover{
+            background-color: @colorDefault;
+            color: @secondColor;
+            box-shadow: #4F5665;
+        }
+    }
+}
+
 
 @media only screen and (min-device-width: 720px) and (min-device-height: 720px) {
     .layout-container {
